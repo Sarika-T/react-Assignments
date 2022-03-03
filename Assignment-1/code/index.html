@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width">
-<title>Designing Web App using HTML/CSS/REACT</title>
-<link rel="stylesheet" href="style.css" />
-<script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-<!-- Don't use this in production: -->
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>Designing Web App using HTML/CSS/REACT</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
+
 <body>
     <div id="root"></div>
     <script type="text/babel">
-//React Code here
- ReactDOM.render(<div></div>,document.getElementById('root'));
 
-</script>
-<!--
+
+        var reactUI = React.createElement('div', { className: 'page-Container' }, React.createElement('div', { className: 'first-container' }, React.createElement('div', { className: 'first-container-one' }), React.createElement('div', { className: 'first-container-two'
+        }), React.createElement('div', { className: 'first-container-three' }), React.createElement('div', { className: 'first-container-four' }), React.createElement('div', { className: 'first-container-five' })), React.createElement('div', { className:
+        'second-container' }, React.createElement('div', { className: 'second-container-one' }), React.createElement('div', { className: 'second-container-two' }), React.createElement('div', { className: 'second-container-three' }), React.createElement('div',
+        { className: 'second-container-four' }), React.createElement('div', { className: 'second-container-five' })), React.createElement('div', { className: 'third-container' }, React.createElement('div', { className: 'third-container-one' }), React.createElement('div',
+        { className: 'third-container-two' }), React.createElement('div', { className: 'third-container-three' }), React.createElement('div', { className: 'third-container-four' }), React.createElement('div', { className: 'third-container-five' }), React.createElement('div',
+        { className: 'third-container-six' }))); ReactDOM.render(reactUI, document.getElementById('root'));
+    </script>
+
+
+
+    <!--
      Note: this page is a great way to try React but it's not suitable for production.
      It slowly compiles JSX with Babel in the browser and uses a large development build of React.
      Read this section for a production-ready setup with JSX:
@@ -28,4 +38,5 @@
      https://reactjs.org/docs/react-without-jsx.html
    -->
 </body>
+
 </html>
